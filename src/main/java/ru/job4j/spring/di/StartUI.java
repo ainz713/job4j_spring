@@ -2,8 +2,10 @@ package ru.job4j.spring.di;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Scope;
 
 @Component
+@Scope("prototype")
 public class StartUI {
 
     @Autowired
